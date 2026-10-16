@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #03182f;
+    background-position: center;
+    background-size: cover;
+}
+
+.inicio {
+    background-image: url("../img/image 2.png");
+}
+
+.cadastro {
+    background-image: url("../img/image 2.png");
+}
+
+.novidades {
+    background-image: url("../img/image 4.png");
+}
+
+.vendas {
+    background-image: url("../img/image 3.png");
+}
+
+.otimizacao {
+    background-image: url("../img/image 5.png");
+}
+
+.sobre {
+    background-image: url("../img/image 6.png");
+}
+
+.cabecalho {
+    height: 172px;
+    border-top: 2px solid #00baff;
+    border-bottom: 2px solid #00baff;
+    background: #fff;
+    text-align: center;
+}
+
+.cabecalho img {
+    width: 168px;
+    height: 167px;
+    object-fit: contain;
+}
+
+.conteudo {
+    display: flex;
+    min-height: calc(100vh - 172px);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.titulo {
+    width: 80%;
+    margin: 0 0 4px;
+    padding: 10px;
+    background: #fff;
+    color: #111;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.link,
+.botao {
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border: 0;
+    background: #153cff;
+    color: #ffffff;
+    font: inherit;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover,
+.botao:hover {
+    filter: brightness(1.15);
+}
+
+.voltar {
+    color: #fff;
+    text-decoration: none;
+}
+
+.botao:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.inicio .conteudo {
+    gap: 18px;
+}
+
+.inicio .link {
+    width: 76%;
+    justify-content: flex-start;
+    gap: 10px;
+    border: 2px solid #09264b;
+    border-radius: 7px;
+    background: #fff;
+    color: #111;
+    text-align: left;
+}
+
+.destaque {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding: 10px;
+    background: #ffffff;
+    color: #050b20;
+    font-size: 18px;
+}
+
+.novidades .conteudo {
+    gap: 28px;
+}
+
+.novidades .link-descobrir {
+    width: 90%;
+    margin-top: 12px;
+    background: #f00000;
+    color: #000;
+}
+
+.cadastro .conteudo {
+    align-items: stretch;
+    gap: 12px;
+    text-align: left;
+}
+
+.cadastro .titulo {
+    align-self: center;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.cadastro label {
+    color: #000;
+    font-size: 17px;
+}
+
+.cadastro .voltar {
+    color: #000;
+}
+
+.cadastro input {
+    width: 86%;
+    height: 40px;
+    border: 0;
+    padding: 6px 8px;
+    font: inherit;
+}
+
+.cadastro .botao {
+    width: 86%;
+    align-self: center;
+    margin-top: 24px;
+    background: #00f52b;
+    color: #000;
+}
+
+.planos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.plano {
+    display: grid;
+    gap: 16px;
+    justify-items: center;
+}
+
+.vendas .conteudo {
+    align-items: stretch;
+    gap: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.vendas .titulo {
+    align-self: center;
+    text-align: center;
+}
+
+.vendas .link {
+    width: 82%;
+    align-self: center;
+}
+
+.otimizacao .titulo {
+    width: 86%;
+    background: #00f52b;
+    text-align: center;
+}
+
+.otimizacao .download {
+    width: 74%;
+    min-height: 60px;
+    margin-top: 34px;
+    background: #ddd;
+    color: #111;
+}
+
+.otimizacao .voltar {
+    margin-top: auto;
+    color: #fff;
+}
+
+.sobre .conteudo {
+    justify-content: center;
+    align-items: stretch;
+    text-align: left;
+}
+
+.sobre .texto {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.42;
+}
+
+.sobre .voltar {
+    align-self: center;
+    margin-top: 8px;
+    color: #fff;
+}
